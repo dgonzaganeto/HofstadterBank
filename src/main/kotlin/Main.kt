@@ -1,7 +1,19 @@
 fun main(args: Array<String>) {
     println("Bem Vindo ao Hofstadter Bank")
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-   // println("Program arguments: ${args.joinToString()}")
+    val titular = "Dionzio"
+    val numeroConta = 1234
+    var saldo = 100.00
+
+    println("Titular: $titular")
+    println("Número da Conta: $numeroConta")
+    println("Saldo em conta: $saldo")
+
+    if(saldo > 0.0){
+        println("conta é positiva")
+    }else if (saldo == 0.0) {
+        println("conta é neutra")
+    }else{
+        println("conta é negativa")
+    }
 }
