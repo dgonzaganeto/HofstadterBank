@@ -21,7 +21,16 @@ fun main(args: Array<String>) {
     println(contaJessica.numero)
     println(contaJessica.saldo)
 
+    val contaDidio = Conta()
+    contaDidio.titular = "Dionizio"
+
+    var contaJess = Conta()
+    contaJess.titular = "Jessica"
+
+    println("Titular conta Didio: ${contaDidio.titular}")
+    println("Titular conta Jess: ${contaJess.titular}")
 }
+
 
 class Conta{
     var titular = ""
