@@ -125,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672686216930</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="withdrawing">
+      <created>1672749807783</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672749807783</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +170,7 @@
     </ignored-roots>
     <MESSAGE value="Starting a fintech project" />
     <MESSAGE value="adding another accounts" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding another accounts" />
+    <MESSAGE value="withdrawing" />
+    <option name="LAST_COMMIT_MESSAGE" value="withdrawing" />
   </component>
 </project>

@@ -61,6 +61,21 @@ fun clienteCorrentista() {
     contaJessica.saca(valor = 15.00)
     println(contaJessica.saldo)
 
+    println()
+    println("Transferência da conta de Jessica para Dionizio")
+
+    if (contaJessica.transfere(valor = 1.75, contaDionizio)){
+        println("Sucesso na transferência")
+    }else {
+        println("Falha na transferência")
+    }
+
+    println()
+    println(contaJessica.saldo)
+
+    println()
+    println("Saldo conta Dionizio, ${contaDionizio.saldo}")
+
 }
 
 fun nomeTitular(){
@@ -86,6 +101,15 @@ fun nomeTitular(){
             if(saldo >= valor){
                 saldo -= valor
             }
+        }
+
+        fun transfere(valor: Double, destino: Conta): Boolean{
+            if(saldo >= valor){
+                saldo -= valor
+                destino.saldo += valor
+                return true
+            }
+                return false
         }
 
     }
