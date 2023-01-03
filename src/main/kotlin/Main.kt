@@ -41,22 +41,28 @@ fun clienteCorrentista() {
 
     println(contaDionizio.saldo)
     println("Depositando na conta Dionizio")
-    deposita(contaDionizio, valor = 50.0)
+    contaDionizio.deposita(valor = 50.0)
     println(contaDionizio.saldo)
 
     println()
 
     println("Saldo anteior conta de Jessica: ${contaJessica.saldo}")
     println("Depositando na conta de Jessica")
-    deposita(contaJessica, valor = 100.0)
+    contaJessica.deposita(valor = 100.0)
     println("Saldo atual na conta de Jessica: ${contaJessica.saldo}")
 
+    println("sacando na conta de Dionizio")
+    contaDionizio.saca(valor = 10.0)
+    println(contaDionizio.saldo)
+
+    println()
+
+    println("Sacando na conta da Jessica")
+    contaJessica.saca(valor = 15.00)
+    println(contaJessica.saldo)
 
 }
 
-fun deposita(conta: Conta, valor: Double){
-    conta.saldo += valor
-}
 fun nomeTitular(){
     val contaDidio = Conta()
     contaDidio.titular = "Dionizio"
@@ -71,4 +77,15 @@ fun nomeTitular(){
         var titular = ""
         var numero = 0
         var saldo = 0.0
+
+        fun deposita(valor: Double){
+            this.saldo += valor
+        }
+
+        fun saca(valor: Double){
+            if(saldo >= valor){
+                saldo -= valor
+            }
+        }
+
     }
